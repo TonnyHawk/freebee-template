@@ -2,21 +2,33 @@ let {src , dest, series, parallel, watch} = require('gulp'),
     gulp = require('gulp'),
     sass = require('gulp-sass'),
     browsersync = require('browser-sync').create(),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    rename = require('gulp-rename'),
+    minifiCss = require('gulp-cssnano'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    groupCssMedia = require('gulp-group-css-media-queries');
 
 let sourceFold = './src';
 
 function browserSync(){
    browsersync.init({
       server: {
-          baseDir: sourceFold
+          baseDir: sourceFold,
+          notify: false
       }
   });
 }
 
 function css(){
    return src(sourceFold + '/sass/main.scss')
+      .pipe(sourcemaps.init()) // инициализируем создание Source Maps
       .pipe(sass())
+      .pipe(autoprefixer(['last 5 versions'])) // добавляем вендорные префиксы
+      .pipe(groupCssMedia())
+      .pipe(minifiCss())
+      .pipe(rename({ suffix: '.min', prefix : '' })) // переименовываем файл в .min.css
+      .pipe(sourcemaps.write()) // пути для записи SourceMaps - в данном случае карта SourceMaps будет добавлена прям в данный файл main.min.css в самом конце
       .pipe(dest(sourceFold + '/css/'))
       .pipe(browsersync.stream())
 }
