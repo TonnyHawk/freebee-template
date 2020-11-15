@@ -1,0 +1,151 @@
+@import 'hamburgers';
+
+.navbar {
+   color: white;
+   padding-top: 40px;
+   @include absolute;
+   width: 100%;
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   @media(max-width: 1000px){
+      padding: 30px 0;
+      background: #e78682;
+   }
+
+   &__container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      position: relative;
+   }
+
+   // .navbar__logo, 
+   // .navbar__menu-icon, 
+
+   &__logo, &__menu-icon {
+      z-index: 2;
+   }
+
+   // .navbar__logo-text
+
+   &__logo-text {
+      font-family: 'monserrat';
+      font-weight: 800;
+      font-size: 30px;
+   }
+
+   // .navbar__menu-icon
+
+   &__menu-icon{
+      display: none;
+      @media(max-width: 1000px){
+         display: block;
+      }
+   }
+   
+
+   // .navbar__menu
+
+   &__menu {
+      display: flex;
+      @media(max-width: 1000px){
+         position: absolute;
+         top: -500px;
+         left: 0;
+         width: 100%;
+         flex-direction: column;
+         background: linear-gradient(#e78282, #e89384);
+         align-items: center;
+         padding: 40px 0;
+         z-index: 1;
+         transition: 0.9s, opacity 0.2s;
+         opacity: 0;
+      }
+
+      &.show{
+         top: 60px;
+         opacity: 1;
+      }
+   }
+
+   // .navbar__menu-items
+
+   &__menu-items{
+      display: flex;
+      margin-right: 50px;
+      @media(max-width: 1000px){
+         flex-direction: column;
+         align-items: center;
+         margin: 0 0 45px 0;
+      }
+   }
+
+   // .navbar__menu-item
+
+   &__menu-item {
+      text-transform: uppercase;
+      font-family: 'monserrat';
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0 30px;
+      color: white;
+      position: relative;
+      @media(max-width: 1000px){
+         margin: 20px 0;
+      }
+
+      &:first-child{
+         margin-left: 0;
+         margin-top: 0;
+      }
+      &:last-child{
+         margin-right: 0;
+         margin-bottom: 0;
+      }
+
+      &:after{
+         content: '';
+         display: block;
+         position: absolute;
+         width: 0%;
+         height: 4px;
+         background: #fce38a;
+         transition: width 0.3s;
+         top: 27px;
+      }
+
+      &:hover{
+         color: #fce38a;
+
+         &:after{
+            width: 100%;
+         }
+      }
+   }
+
+   // .navbar__menu-actions
+
+   &__menu-actions{
+      @media(max-width: 1000px){
+         order: 1;
+      }
+   }
+   
+   // .navbar__menu-action
+
+   &__menu-action{
+      @extend .navbar__menu-item;
+      margin: 0 20px;
+      @media(max-width: 1000px){
+         margin: 0 13px;
+      }
+
+      &:hover{
+         &:after{
+            display: none;
+         }
+      }
+   }
+}

@@ -1,0 +1,41 @@
+@mixin flex-centered{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin center{
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin absolute{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@mixin layer{
+	@include absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin column{
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin fontface($name, $file, $weight: normal, $style: normal){
+	@font-face {
+	  font-family: "#{$name}";
+	  src: url('../fonts/#{$file}.eot');
+	  src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/#{$file}.woff') format('woff'),
+			 url('../fonts/#{$file}.ttf') format('truetype'),
+			 url('../fonts/#{$file}.otf'),
+			 url('../fonts/#{$file}.svg?#webfont') format('svg');
+	  font-weight: $weight;
+	  font-style: $style;
+	}
+ }
