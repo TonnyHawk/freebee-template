@@ -14,7 +14,6 @@
    }
 
    &__container{
-      display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 30px;
@@ -31,7 +30,7 @@
    // .navbar__logo-text
 
    &__logo-text {
-      font-family: 'monserrat';
+      font-family: 'monserat';
       font-weight: 800;
       font-size: 30px;
    }
@@ -86,7 +85,7 @@
 
    &__menu-item {
       text-transform: uppercase;
-      font-family: 'monserrat';
+      font-family: 'monserat';
       font-weight: 500;
       font-size: 14px;
       margin: 0 30px;

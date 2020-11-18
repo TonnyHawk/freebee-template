@@ -29,12 +29,12 @@
 @mixin fontface($name, $file, $weight: normal, $style: normal){
 	@font-face {
 	  font-family: "#{$name}";
-	  src: url('../fonts/#{$file}.eot');
-	  src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
-			 url('../fonts/#{$file}.woff') format('woff'),
-			 url('../fonts/#{$file}.ttf') format('truetype'),
-			 url('../fonts/#{$file}.otf'),
-			 url('../fonts/#{$file}.svg?#webfont') format('svg');
+	  src: url('#{$file}.eot');
+	  src: url('#{$file}.eot?#iefix') format('embedded-opentype'),
+			 url('#{$file}.woff') format('woff'),
+			 url('#{$file}.ttf') format('truetype'),
+			 url('#{$file}.otf'),
+			 url('#{$file}.svg?#webfont') format('svg');
 	  font-weight: $weight;
 	  font-style: $style;
 	}

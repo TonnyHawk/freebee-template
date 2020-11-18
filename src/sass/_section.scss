@@ -1,5 +1,5 @@
 .section {
-
+   padding: 100px 0;
 
    &__pretitle, &__title{
       text-align: center;
@@ -8,24 +8,32 @@
 
    &__pretitle {
       font-family: 'kaushanScript';
+      font-size: 24px;
    }
 
    // .section__title
 
    &__title {
-      font-family: 'monserrat';
-      font-weight: 850;
+      font-family: 'monserat';
+      font-weight: 900;
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      margin-top: 25px;
 
       &:after{
          content: '';
          width: 60px;
-         background: white;
-         height: 5px;
-         width: 60px;
-         margin: 70px 0 50px;
+         margin: 40px 0 50px;
+         background-color: $pink;
+         height: 3px;
       }
+   }
+
+   &__descr{
+      font-family: 'monserat';
+      
    }
 }

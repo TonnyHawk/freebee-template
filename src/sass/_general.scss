@@ -1,9 +1,9 @@
 @include fontface("kaushanScript", "../fonts/KaushanScript-Regular");
-@include fontface("monserrat", "../fonts/Montserrat/Montserrat-Bold", 'bold');
-@include fontface("monserrat", "../fonts/Montserrat/Montserrat-ExtraBold", '800');
-@include fontface("monserrat", "../fonts/Montserrat/Montserrat-Black", '850');
-@include fontface("monserrat", "../fonts/Montserrat/Montserrat-Regular", '400');
-@include fontface("monserrat", "../fonts/Montserrat/Montserrat-Medium", '500');
+@import '../fonts/Montserrat/font-styles.css';
+
+$pink: #f38181;
+$yellow: #f2da8a;
+$blue: #95e1d3;
 
 .btn {
    @include flex-centered;
@@ -12,7 +12,7 @@
    border: 5px solid white;
    font-size: 14px;
    color: white;
-   font-family: 'monserrat';
+   font-family: 'monserat';
    font-weight: bold;
    text-transform: uppercase;
    transition: 0.3s;
@@ -26,4 +26,26 @@
 .container{
    max-width: 1200px;
    width: 100%;
+   display: flex;
+}
+
+.photo {
+
+   // .photo__image
+
+   &__image {
+   }
+}
+
+.layer {
+
+   // .layer__bg
+
+   &__bg {
+   }
+
+   // .layer__content
+
+   &__content {
+   }
 }
