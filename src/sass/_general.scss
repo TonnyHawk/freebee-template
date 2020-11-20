@@ -1,5 +1,6 @@
 @include fontface("kaushanScript", "../fonts/KaushanScript-Regular");
 @import '../fonts/Montserrat/font-styles.css';
+@import '../fonts/Roboto/stylesheet.css';
 
 $pink: #f38181;
 $yellow: #f2da8a;
@@ -23,10 +24,17 @@ $blue: #95e1d3;
    }
 }
 
-.container{
-   max-width: 1200px;
-   width: 100%;
-   display: flex;
+.row{
+   padding: {
+      top: -15px;
+      bottom: -15px;
+   }
+}
+.colmn{
+   padding: {
+      top: 15px;
+      bottom: 15px;
+   }
 }
 
 .photo {

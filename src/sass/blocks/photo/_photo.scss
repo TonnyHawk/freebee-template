@@ -1,0 +1,32 @@
+.photo {
+   border: 1px solid red;
+   position: relative;
+
+   // .photo__image
+
+   &__image {
+      width: 100%;
+      padding-top: 65%;
+      z-index: 1;
+   }
+}
+.layer {
+   @include layer;
+   z-index: 2;
+
+   // .layer__bg
+
+   &__bg {
+   }
+
+   // .layer__content
+
+   &__content {
+   }
+}
+.icon {
+}
+.ic-team {
+}
+.ibg {
+}

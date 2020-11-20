@@ -96,3 +96,8 @@
 .ic-youtube:before {
   content: "\e917";
 }
+
+.ic-team:before {
+  content: "\e900";
+  color: #fff;
+}

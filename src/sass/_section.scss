@@ -33,7 +33,11 @@
    }
 
    &__descr{
-      font-family: 'monserat';
-      
+      font-family: 'roboto';
+      color: #999999;
+      max-width: 955px;
+      text-align: center;
+      line-height: 28px;
+      margin: 0 auto 95px;
    }
 }
