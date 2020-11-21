@@ -1,0 +1,56 @@
+.counter {
+   background: $blue;
+   color: white;
+
+   // .counter__row
+
+   &__row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   // .counter__item
+
+   &__item {
+      @include flex-centered;
+      flex-direction: column;
+      flex: 1 0 220px;
+      padding: 90px 0;
+      border-right: 2px solid $light-blue;
+
+      &:first-child{
+         border-left: 2px solid $light-blue;
+      }
+
+      &, &:first-child{
+         @media(max-width: 1200px){
+            border: none;
+            border-bottom: 2px solid $light-blue;
+         }
+      }
+
+      &:last-child{
+         @media(max-width: 1200px){
+            border-bottom: none;
+         }
+      }
+   }
+
+   // .counter__num
+
+   &__num {
+      font-family: 'monserat';
+      font-weight: bold;
+      font-size: 72px;
+      margin-bottom: 20px;
+   }
+
+   // .counter__text
+
+   &__text {
+      font-family: 'monserat';
+      text-transform: uppercase;
+      font-size: 14px;
+   }
+}
