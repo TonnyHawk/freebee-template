@@ -1,6 +1,6 @@
 .photo {
-   border: 1px solid red;
    position: relative;
+   transition: 0.3s;
 
    // .photo__image
 
@@ -9,24 +9,56 @@
       padding-top: 65%;
       z-index: 1;
    }
+
+   &:after{
+      content: '';
+      @include layer;
+      background: $blue;
+      transition: 0.3s;
+   }
+
+   &:hover{
+      transform: translate(-5px, -5px);
+
+      &:after{
+         transform: translate(10px, 10px);
+      }
+
+      .layer{
+         opacity: 1;
+      }
+   }
 }
 .layer {
    @include layer;
    z-index: 2;
+   opacity: 0;
+   transition: 0.55s 0.23s;
 
    // .layer__bg
 
    &__bg {
+      @include layer;
+      background: linear-gradient($pink, $yellow);
+      opacity: 0.88;
    }
 
    // .layer__content
 
    &__content {
+      @include layer;
+      @include flex-centered;
+      flex-direction: column;
+      color: white;
    }
-}
-.icon {
-}
-.ic-team {
-}
-.ibg {
+
+   // .layer__text
+
+   &__text{
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'monserat';
+      font-weight: bold;
+      margin-top: 5px;
+   }
 }
