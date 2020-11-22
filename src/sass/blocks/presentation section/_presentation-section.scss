@@ -21,8 +21,8 @@
       padding-right: 40%;
       transform: translateX(-10%);
       @media (max-width: 760px){
-         height: 350px;
-         padding-right: 362px;
+         height: 100vw;
+         padding-right: 86%;
       }
    }
 
@@ -35,8 +35,10 @@
       bottom: -45px;
       transform: translateX(99%);
       @media (max-width: 760px){
-         height: 285px;
-         padding-right: 133px;
+         height: 77vw;
+         padding-right: 42%;
+         transform: translateX(88%);
+         bottom: -6%;
       }
    }
 }

@@ -1,5 +1,6 @@
 .section {
    padding: 100px 0;
+   overflow: hidden;
    @media(max-width: 920px){
       padding: 60px 0;
    }
