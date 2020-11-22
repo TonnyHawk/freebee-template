@@ -73,3 +73,11 @@
       margin-bottom: 70px;
    }
 }
+
+.section-presentation{
+   padding-bottom: 0;
+   margin-bottom: 200px;
+   @media (max-width: 920px){
+      padding-bottom: 0;
+   }
+}

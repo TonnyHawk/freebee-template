@@ -1,0 +1,42 @@
+.presentation {
+
+   // .presentation__device-group
+
+   &__device-group{
+      position: relative;
+      display: flex;
+      justify-content: center;
+   }
+
+   // .presentation__device
+
+   &__device{
+      width: max-content;
+   }
+
+   // .presentation__ipad
+
+   &__ipad {
+      height: 50vw;
+      padding-right: 40%;
+      transform: translateX(-10%);
+      @media (max-width: 760px){
+         height: 350px;
+         padding-right: 362px;
+      }
+   }
+
+   // .presentation__iphone
+
+   &__iphone {
+      height: 35vw;
+      padding-right: 16%;
+      position: absolute;
+      bottom: -45px;
+      transform: translateX(99%);
+      @media (max-width: 760px){
+         height: 285px;
+         padding-right: 133px;
+      }
+   }
+}
