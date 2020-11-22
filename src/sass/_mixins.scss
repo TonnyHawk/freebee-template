@@ -26,6 +26,11 @@
 	flex-direction: column;
 }
 
+@mixin square($num){
+	height: $num;
+	width: $num;
+}
+
 @mixin fontface($name, $file, $weight: normal, $style: normal){
 	@font-face {
 	  font-family: "#{$name}";
