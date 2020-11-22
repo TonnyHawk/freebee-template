@@ -1,6 +1,6 @@
 $(document).ready(function(){
-   $('.activity').click(function(){
-      $(this).find('.activity__body').slideToggle();
-      $(this).toggleClass('open');
+   $('.activity__header').click(function(){
+      $(this).parent().find('.activity__body').slideToggle();
+      $(this).parent().toggleClass('open');
    });
 });

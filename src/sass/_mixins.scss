@@ -39,3 +39,30 @@
 	  font-style: $style;
 	}
  }
+
+ //------custom scrollbar
+ @mixin scrollbars($size, $foreground-color, $background-color, $border-radius: none) {
+	// For Google Chrome
+	&::-webkit-scrollbar {
+	  width:  $size;
+	  height: $size;
+	}
+ 
+	&::-webkit-scrollbar-thumb {
+	  background: $foreground-color;
+	}
+ 
+	&::-webkit-scrollbar-track {
+	  background: $background-color;
+	}
+
+	&::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track{
+		border-radius: $border-radius;
+	}
+ 
+	// For Internet Explorer
+	& {
+	  scrollbar-face-color: $foreground-color;
+	  scrollbar-track-color: $background-color;
+	}
+ }
