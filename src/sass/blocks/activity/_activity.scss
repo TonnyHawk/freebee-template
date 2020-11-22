@@ -9,7 +9,6 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px;
-      border-bottom: 1px solid $light-gray;
    }
 
    // .activity__name
@@ -47,6 +46,8 @@
 
    &__body {
       padding: 20px 20px 30px;
+      display: none;
+      border-top: 1px solid $light-gray;
    }
 
    // .activity__descr
@@ -56,5 +57,11 @@
       font-family: 'roboto';
       font-style: italic;
       color: #d0d0d0;
+   }
+
+   &.open{
+      .activity__toggle-ic{
+         transform: rotate(180deg);
+      }
    }
 }
