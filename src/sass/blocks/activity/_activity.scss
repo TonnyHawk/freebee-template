@@ -1,0 +1,60 @@
+.activity {
+   border: 1px solid $light-gray;
+   margin-bottom: 10px;
+
+   // .activity__header
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid $light-gray;
+   }
+
+   // .activity__name
+
+   &__name {
+      display: flex;
+      align-items: center;
+   }
+
+   // .activity__ic
+
+   &__ic {
+      font-size: 30px;
+      color: $blue;
+   }
+
+   // .activity__text
+
+   &__name-text {
+      margin-left: 15px;
+      text-transform: uppercase;
+      font-family: 'monserat';
+      font-weight: bold;
+      font-size: 14px;
+   }
+
+   // .activity__toggle-ic
+
+   &__toggle-ic {
+      font-size: 12px;
+      color: #d0d0d0;
+   }
+
+   // .activity__body
+
+   &__body {
+      padding: 20px 20px 30px;
+   }
+
+   // .activity__descr
+
+   &__descr{
+      font-size: 15px;
+      font-family: 'roboto';
+      font-style: italic;
+      color: #d0d0d0;
+   }
+}
