@@ -4,4 +4,5 @@ new Swiper('.comment-slider', {
       nextEl: '.comment-slider__btn-next',
       prevEl: '.comment-slider__btn-prev',
    },
+   loop: true
 });

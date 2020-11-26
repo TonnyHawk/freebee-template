@@ -71,25 +71,29 @@
 
 		&__btn-prev {
          left: 0;
-         transform: rotate(90deg);
+         // transform: rotate(90deg);
 		}
 
 		// .comment-slider__btn-next
 
 		&__btn-next {
          right: 0;
-         transform: rotate(-90deg);
+         // transform: rotate(-90deg);
       }
       
-      &__btn-prev, &__btn-next{
+      &__btn{
          position: absolute;
+         @include flex-centered;
          top: 0;
          height: 100%;
-         width: 30px;
-         background: white;
+         background: #f8f8f8;
          z-index: 100;
          cursor: pointer;
-         font-size: 30px;
+         font-size: 12px;
          color: #cccccc;
+      }
+
+      &__btn-icon{
+
       }
 }
