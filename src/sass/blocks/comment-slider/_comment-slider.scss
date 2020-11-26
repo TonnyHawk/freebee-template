@@ -4,7 +4,14 @@
 
 		&__slide {
          padding: 0 105px;
+         @media (max-width: 920px){
+            padding: 0 11vw;
+         }
          display: flex;
+         @media (max-width: 570px){
+            flex-direction: column;
+            align-items: center;
+         }
 		}
 
 		// .comment-slider__aside
@@ -16,6 +23,12 @@
          border-radius: 5px;
          flex-shrink: 0;
          margin-right: 55px;
+         @media (max-width: 920px){
+            margin-right: 35px;
+         }
+         @media (max-width: 570px){
+            margin-right: 0;
+         }
 		}
 
 		// .comment-slider__quote-icon
@@ -40,6 +53,10 @@
          line-height: 27px;
          max-height: 80px;
          overflow: hidden;
+         @media (max-width: 570px){
+            margin-top: 20px;
+            text-align: center;
+         }
 		}
 
 		// .comment-slider__author
@@ -48,6 +65,11 @@
          display: flex;
          align-items: center;
          margin-top: 30px;
+         @media (max-width: 570px){
+            justify-content: flex-end;
+            margin-top: 20px;
+         }
+
 
          &:after{
             content: '';
@@ -55,6 +77,9 @@
             height: 4px;
             background: $pink;
             order: 1;
+            @media (max-width: 570px){
+               width: 35px;
+            }
          }
       }
       
