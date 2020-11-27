@@ -17,31 +17,6 @@
       }
    }
 
-   // .photo__text-wrap
-
-   &__text-wrap {
-   }
-
-   // .photo__title
-
-   &__title {
-      font-family: 'monserat';
-      text-transform: uppercase;
-      color: #000;
-      font-size: 14px;
-   }
-
-   // .photo__descr
-
-   &__descr {
-      font-family: 'roboto';
-      font-style: italic;
-      font-weight: 300;
-      color: $gray;
-      font-size: 15px;
-      text-transform: capitalize;
-   }
-
    &:after{
       content: '';
       @include layer;
