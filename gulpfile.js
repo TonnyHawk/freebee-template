@@ -41,7 +41,7 @@ function html(){
 
 function watchFiles(){
    watch(sourceFold + '/sass/**/*.scss', css);
-   watch(sourceFold + '/html/*.html').on('change', series(html, browsersync.reload));
+   watch(sourceFold + '/**/*.html').on('change', series(html, browsersync.reload));
 }
 
 let build = series(css, html);
