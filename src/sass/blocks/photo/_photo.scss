@@ -7,13 +7,33 @@
    &__image {
       width: 100%;
       z-index: 1;
+
+      // .photo__image_horizontal
+
       &_horizontal{
          @extend .photo__image;
          padding-top: 65%;
       }
+
+      // .photo__image_vertical
+
       &_vertical{
          @extend .photo__image;
          padding-top: 123%;
+      }
+
+      // .photo__image_square
+
+      &_square {
+         @extend .photo__image;
+         padding-top: 85%;
+      }
+
+      // .photo__image__fluid
+
+      &_fluid{
+         @extend .photo__image;
+         padding-top: 170%;
       }
    }
 
@@ -69,6 +89,11 @@
       font-family: 'monserat';
       font-weight: bold;
       margin-top: 5px;
+   }
+
+   // .layer__descr
+
+   &__descr {
    }
 
    // .layer__socials
