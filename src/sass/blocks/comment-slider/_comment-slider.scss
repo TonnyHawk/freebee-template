@@ -23,10 +23,6 @@
 		// .comment-slider__aside
 
 		&__aside {
-         @include square(100px);
-         @include flex-centered;
-         border: 3px solid $blue;
-         border-radius: 5px;
          flex-shrink: 0;
          margin-right: 55px;
          @media (max-width: 920px){
@@ -35,14 +31,26 @@
          @media (max-width: 570px){
             margin-right: 0;
          }
-		}
+      }
 
 		// .comment-slider__quote-icon
 
 		&__quote-icon {
+         @include square(100px);
+         @include flex-centered;
+         border: 3px solid $blue;
+         border-radius: 5px;
          font-size: 50px;
          color: $blue;
-		}
+      }
+      
+      // .comment-slider__author-photo
+
+      &__author-photo{
+         border-radius: 100%;
+         padding-bottom: 100%;
+         width: 165px;
+      }
 
 		// .comment-slider__main
 
