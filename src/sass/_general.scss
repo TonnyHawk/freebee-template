@@ -8,6 +8,11 @@ $blue: #95e1d3;
 $light-blue: #b5eae0;
 $gray: #9f9f9f;
 $light-gray: #e5e5e5;
+$black: #333333;
+
+html{
+   color: $black;
+}
 
 .btn {
    @include flex-centered;
