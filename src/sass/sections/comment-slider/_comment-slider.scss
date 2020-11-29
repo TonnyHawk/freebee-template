@@ -1,13 +1,19 @@
 .comment-slider {
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 auto;
+
+      //.comment-slider__wrap
+   
+      &__wrap{
+         position: relative;
+      }
 
 		// .comment-slider__slide
 
 		&__slide {
-         padding: 0 105px;
-         @media (max-width: 920px){
-            padding: 0 11vw;
-         }
          display: flex;
+         padding: 0 70px;
          @media (max-width: 570px){
             flex-direction: column;
             align-items: center;
