@@ -1,6 +1,7 @@
 .section {
    padding: 100px 0;
    overflow: hidden;
+   position: relative;
    @media(max-width: 920px){
       padding: 60px 0;
    }
@@ -85,4 +86,21 @@
 .section-line{
    padding: 70px 0;
    background: #f8f8f8;
+}
+
+.section-map{
+   padding: 60px 0;
+   color: $pink;
+   .section{
+      &__pretitle{
+         font-size: 33px;
+      }
+      &__title{
+         font-weight: 700;
+         &:after{
+            margin-bottom: 0;
+            height: 4px;
+         }
+      }
+   }
 }
