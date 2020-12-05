@@ -1,4 +1,4 @@
-@import 'navbar';
+@import '../../blocks/navbar/navbar';
 
 .header {
    display: flex;
@@ -8,6 +8,7 @@
    height: 1000px;
    color: white;
    @media(max-width: 920px){
+      min-height: 182vw;
       height: 100vh;
    }
 

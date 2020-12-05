@@ -1,13 +1,16 @@
-@import 'hamburgers';
+@import '../hamburgers/hamburgers';
 
 .navbar {
    color: white;
    padding-top: 40px;
-   @include absolute;
+   position: fixed;
+   top: 0;
+   left: 0;
    width: 100%;
-   z-index: 100;
+   z-index: 500;
    display: flex;
    justify-content: center;
+   transition: padding 0.3s;
    @media(max-width: 1000px){
       padding: 30px 0;
       background: #e78682;
@@ -67,7 +70,7 @@
       }
 
       &.show{
-         top: 60px;
+         top: 59px;
          opacity: 1;
       }
    }
@@ -148,6 +151,13 @@
          &:after{
             display: none;
          }
+      }
+   }
+
+   &.fixed{
+      padding: 20px 0;
+      .navbar__menu.show{
+         top: 49px;
       }
    }
 }
