@@ -1,7 +1,7 @@
-@import 'mixins';
-@import 'my-lib';
-@import 'general';
-@import 'section';
+@import 'base/mixins';
+@import 'base/my-lib';
+@import 'base/general';
+@import 'base/section';
 @import 'blocks/header/header';
 @import 'blocks/photo/photo';
 @import 'blocks/counter/counter';

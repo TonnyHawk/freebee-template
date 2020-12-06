@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'icon';
+  font-family: 'custom-icofont';
   src:
-    url('../fonts/icomoon/icon.ttf?yjejcu') format('truetype'),
-    url('../fonts/icomoon/icon.woff?yjejcu') format('woff'),
-    url('../fonts/icomoon/icon.svg?yjejcu#icon') format('svg');
+    url('fonts/custom-icofont.ttf?yfcp67') format('truetype'),
+    url('fonts/custom-icofont.woff?yfcp67') format('woff'),
+    url('fonts/custom-icofont.svg?yfcp67#custom-icofont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -11,7 +11,7 @@
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icon' !important;
+  font-family: 'custom-icofont' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -27,7 +27,7 @@
 .ic-alarm:before {
   content: "\e900";
 }
-.ic-arrow-right:before {
+.ic-arrow-down:before {
   content: "\e901";
 }
 .ic-book:before {
@@ -36,10 +36,10 @@
 .ic-bullseye:before {
   content: "\e903";
 }
-.ic-comp-ok:before {
+.ic-computer-ok:before {
   content: "\e904";
 }
-.ic-dribble:before {
+.ic-dribbble:before {
   content: "\e905";
 }
 .ic-equalizer:before {
@@ -63,41 +63,39 @@
 .ic-line-graph:before {
   content: "\e90c";
 }
-.ic-search:before {
+.ic-picture:before {
   content: "\e90d";
 }
-.ic-picture:before {
+.ic-pin:before {
   content: "\e90e";
 }
-.ic-pin:before {
+.ic-pinterest:before {
   content: "\e90f";
 }
-.ic-pinterest:before {
+.ic-search:before {
   content: "\e910";
 }
 .ic-shopping-cart:before {
   content: "\e911";
 }
-.ic-speech:before {
+.ic-speech-buble-2svg:before {
   content: "\e912";
 }
-.ic-speech-buble:before {
+.ic-speech:before {
   content: "\e913";
 }
-.ic-tumblr:before {
+.ic-team:before {
   content: "\e914";
 }
-.ic-twitter:before {
+.ic-tumblr:before {
   content: "\e915";
 }
-.ic-view:before {
+.ic-twitter:before {
   content: "\e916";
 }
-.ic-youtube:before {
+.ic-view:before {
   content: "\e917";
 }
-
-.ic-team:before {
-  content: "\e900";
-  color: #fff;
+.ic-youtube:before {
+  content: "\e918";
 }

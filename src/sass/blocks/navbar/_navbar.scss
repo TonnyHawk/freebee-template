@@ -10,7 +10,7 @@
    z-index: 500;
    display: flex;
    justify-content: center;
-   transition: padding 0.3s;
+   transition: 0.3s;
    @media(max-width: 1000px){
       padding: 30px 0;
       background: #e78682;
@@ -156,6 +156,7 @@
 
    &.fixed{
       padding: 20px 0;
+      background: #e78682;
       .navbar__menu.show{
          top: 49px;
       }

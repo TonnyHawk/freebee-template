@@ -42,6 +42,7 @@
 			 url('#{$file}.svg?#webfont') format('svg');
 	  font-weight: $weight;
 	  font-style: $style;
+	  font-display: swap;
 	}
  }
 
