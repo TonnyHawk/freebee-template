@@ -5,6 +5,7 @@ $(document).ready(function(){
       loop: true,
       items: 1,
       dots: false,
+      autoplay: true,
    });
 
    // Custom Navigation Events
