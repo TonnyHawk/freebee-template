@@ -5,7 +5,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   height: 1000px;
+   height: 100vh;
    color: white;
    @media(max-width: 920px){
       min-height: 182vw;
@@ -26,6 +26,9 @@
       @include flex-centered;
       flex-direction: column;
       z-index: 2;
+      @media (min-width: 920px){
+         padding-top: 2.5vw;
+      }
    }
 
    // .header .section
@@ -35,7 +38,7 @@
 		// .section__pretitle
 
 		&__pretitle {
-         font-size: 72px;
+         font-size: 4.5vw;
          @media(max-width: 920px){
             font-size: 7.85vw;
          }
@@ -44,8 +47,8 @@
 		// .section__title
 
 		&__title {
-         font-size: 150px;
-         margin-top: 50px;
+         font-size: 9vw;
+         margin-top: 2vw;
          max-width: 800px;
          @media(max-width: 1000px){
             font-size: 15.5vw;
@@ -58,7 +61,7 @@
             width: 60px;
             background: white;
             height: 5px;
-            margin: 70px 0 50px;
+            margin: 3vw 0 3.5vw;
             @media(max-width: 1000px){
                margin: 8vw 0 9vw;
                width: 10vw;

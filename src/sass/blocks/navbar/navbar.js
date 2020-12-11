@@ -6,7 +6,7 @@ window.addEventListener('scroll', function() {
    var blockHeight = $('#section-header').height();
    var element = document.getElementById("section-header").getBoundingClientRect();
 
-   if($(document).scrollTop() > blockHeight){
+   if($(document).scrollTop() > 30){
 		if($('#topmenu').hasClass('fixed') == false){
 			$('#topmenu').addClass('fixed');
 		}
