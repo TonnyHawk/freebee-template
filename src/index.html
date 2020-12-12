@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="css/vendors/bootstrap-grid.min.css">
    <link rel="stylesheet" href="css/vendors/owl.carousel.min.css">
    <link rel="stylesheet" href="css/vendors/owl.theme.default.css">
+   <link rel="stylesheet" href="css/vendors/aos.css">
    <link rel="stylesheet" href="css/vendors/ibg.css">
    <link rel="stylesheet" href="css/main.min.css">
    <title>Freebee</title>
@@ -97,7 +98,7 @@
    <div class="container">
       <div class="row justify-content-center">
          <div class="colmn col-12 col-md-6 col-lg-4">
-            <div class="photo">
+            <div class="photo" data-aos="fade-up">
                <div class="layer">
                   <div class="layer__bg"></div>
                   <div class="layer__content">
@@ -112,7 +113,7 @@
             </div>
          </div>
          <div class="colmn col-12 col-md-6 col-lg-4">
-            <div class="photo">
+            <div class="photo" data-aos="fade-up" data-aos-delay='200'>
                <div class="layer">
                   <div class="layer__bg"></div>
                   <div class="layer__content">
@@ -127,7 +128,7 @@
             </div>
          </div>
          <div class="colmn col-12 col-md-6 col-lg-4">
-            <div class="photo">
+            <div class="photo" data-aos="fade-up" data-aos-delay='300'>
                <div class="layer">
                   <div class="layer__bg"></div>
                   <div class="layer__content">
@@ -144,32 +145,38 @@
       </div>
    </div>
 </section>
-   <section class="counter">
+   <section class="counter anim-count-contrainer">
    <div class="container">
       <div class="counter__row">
          <div class="counter__item">
-            <p class="counter__num">42</p>
+            <p class="counter__num anim-count">42</p>
             <p class="counter__text">Web Design Projects</p>
          </div>
          <div class="counter__item">
-            <p class="counter__num">123</p>
+            <p class="counter__num anim-count">123</p>
             <p class="counter__text">happy client</p>
          </div>
          <div class="counter__item">
-            <p class="counter__num">15</p>
+            <p class="counter__num anim-count">15</p>
             <p class="counter__text">award winner</p>
          </div>
          <div class="counter__item">
-            <p class="counter__num">99</p>
+            <p class="counter__num anim-count">99</p>
             <p class="counter__text">cup of coffee</p>
          </div>
          <div class="counter__item">
-            <p class="counter__num">24</p>
+            <p class="counter__num anim-count">24</p>
             <p class="counter__text">members</p>
          </div>
       </div>
    </div>
 </section>
+<div class="anim-count-contrainer"></div>
+
+<div id="help-screen">
+   <p class="visible-cont">nothing</p>
+   <p class="other">other</p>
+</div>
    <div class="section section-services">
    <h2 class="section__pretitle">We work with</h2>
    <h1 class="section__title">Amazing services</h1>
@@ -1032,5 +1039,8 @@
    <script src="js/vendors/textEllipsize.js"></script>
    <script src="sass/blocks/brands-slider/brands-slider.js"></script>
    <script src="js/sections/has-author-slider/has-author-slider.js"></script>
+   <script src="js/vendors/aos.js"></script>
+   <script src="js/sections/aosController.js"></script>
+   <!-- <script src="js/sections/counter/animated-counter.js"></script> -->
 </body>
 </html>

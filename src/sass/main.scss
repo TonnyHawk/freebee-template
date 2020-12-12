@@ -15,3 +15,24 @@
 @import 'blocks/testimonial/testimonial';
 @import 'blocks/blog-post/blog-post';
 @import 'blocks/footer/footer';
+
+#help-screen{
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   @include flex-centered;
+   background: white;
+   border: 1px solid red;
+   width: 300px;
+   height: 100px;
+   z-index: 600;
+   flex-direction: column;
+
+   p{
+      font-size: 20px;
+   }
+}
+
+.used-anim-count-contrainer{
+   background: red !important;
+}
