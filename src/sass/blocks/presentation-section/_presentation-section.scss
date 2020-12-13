@@ -19,7 +19,8 @@
    &__ipad {
       height: 50vw;
       padding-right: 40%;
-      transform: translateX(-10%);
+      // transform: translateX(-10%);
+      margin-left: -10%;
       @media (max-width: 760px){
          height: 100vw;
          padding-right: 86%;
@@ -33,11 +34,13 @@
       padding-right: 19%;
       position: absolute;
       bottom: -45px;
-      transform: translateX(99%);
+      // transform: translateX(99%);
+      margin-left: 28%;
       @media (max-width: 760px){
          height: 77vw;
          padding-right: 42%;
-         transform: translateX(88%);
+         // transform: translateX(88%);
+         margin-left: 62%;
          bottom: -6%;
       }
    }

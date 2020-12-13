@@ -2,6 +2,7 @@
 import './vendors/owl.carousel.min';
 import './vendors/ibg';
 import './vendors/aos.js';
+import './vendors/smoothScroll.js';
 // my scripts
 import '../sass/blocks/navbar/navbar';
 import '../sass/blocks/activity/activityController';
